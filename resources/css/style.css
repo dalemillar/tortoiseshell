@@ -14,6 +14,7 @@ div{
 .container{
   max-width: 960px;
   margin: 0px auto;
+  display: flex;
 }
 
 /*Main Photo and Contents*/
@@ -48,6 +49,8 @@ div{
 .white_text{
   display: flex;
   align-items:center;
+  flex-wrap: nowrap;
+  flex-grow: 1;
 }
 
 .white_text p{
@@ -61,7 +64,7 @@ nav{
   height: 3rem;
   align-items: center;
   justify-content: flex-end;
-  flex-grow: 1;
+  /*flex-grow: 2;*/
   color: white;
 }
 
@@ -73,4 +76,24 @@ nav ul{
 
 nav ul li{
   margin-right: 2rem;
+}
+
+/*White Banner*/
+
+.white_banner{
+  position: relative;
+  top: 14rem;
+  left: 30rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  max-width: 35rem;
+}
+
+.white_banner p{
+  line-height: 1.2;
+  font-size: 2rem;
+  padding: 1.5rem 5rem;
+  color: black;
+  font-weight: bold;
 }

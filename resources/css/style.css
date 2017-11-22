@@ -1,0 +1,76 @@
+/*Global Styles*/
+
+html{
+  font-family: Helvetica;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+div{
+  border: solid 1px red;
+  display: block;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+/*Main Photo and Contents*/
+
+.main_photo{
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31rem;
+}
+
+/*Blue Banner and Contents*/
+
+.blue_banner{
+  background-color: cadetblue;
+  display: flex;
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+.white_logo{
+  display: flex;
+  align-items:center;
+}
+
+.white_logo img{
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.white_text{
+  display: flex;
+  align-items:center;
+}
+
+.white_text p{
+  color: white;
+  font-size: 1rem;
+}
+
+nav{
+  display: flex;
+  border: 1px solid yellow;
+  height: 3rem;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+  color: white;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li{
+  margin-right: 2rem;
+}

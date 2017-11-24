@@ -7,7 +7,7 @@ html{
 }
 
 div{
-  border: solid 1px red;
+  /*border: solid 1px red;*/
   display: block;
 }
 
@@ -60,7 +60,7 @@ div{
 
 nav{
   display: flex;
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
   height: 3rem;
   align-items: center;
   justify-content: flex-end;
@@ -68,13 +68,13 @@ nav{
   color: white;
 }
 
-nav ul{
+nav ul.menu{
   list-style: none;
   display: flex;
   align-items: center;
 }
 
-nav ul li{
+nav ul.menu li{
   margin-right: 2rem;
 }
 
@@ -198,4 +198,152 @@ nav ul li{
 
 .azure_strip p{
 
+}
+
+/*Media Queries for <768px*/
+
+@media only screen and (max-width: 768px){
+  .main_photo{
+    height: 22rem;
+  }
+
+  .blue_banner{
+    margin-top: 0px;
+  }
+
+  .blue_banner.container{
+    width: 100%;
+  }
+  .white_banner{
+    position: relative;
+    top: 7rem;
+    left: 15rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    max-width: 25rem;
+  }
+
+  .white_banner p{
+    line-height: 1.2;
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .main_photo{
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .blue_banner{
+    margin-top: 0px;
+  }
+
+  .blue_banner.container{
+    width: 100%;
+  }
+
+  .white_text{
+    display: none;
+  }
+
+  nav ul.mob_ul{
+      list-style: none;
+      display: block;
+      text-align: center;
+    }
+
+  nav ul .mob_ul li{
+    color: white;
+  }
+
+  nav ul.menu{
+    display: none;
+  }
+
+  nav{
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  .white_banner{
+    position: relative;
+    top: 5rem;
+    left: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    max-width: 100%;
+  }
+
+  .white_banner p{
+    padding: 1rem 0rem;
+    font-size: 1rem;
+  }
+
+  .icons{
+    flex-direction: column;
+    margin: 3.77rem 0rem 3.77rem;
+  }
+
+  .blue_boxes{
+    width: 100%;
+    display: flex;
+    margin: 2rem auto 0rem auto;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+  }
+
+  .box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+
+  }
+
+  .box.blue_stripe{
+    background-color: cadetblue;
+    padding: 0.5rem 0rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .box.blue_stripe p{
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .box.text{
+    display:block;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    }
+
+  .box.text p{
+    font-size: 0.77rem;
+  }
+
+  .azure_strip{
+    margin-top: 0rem;
+    background-color: azure;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .azure_strip img{
+    margin: 4rem 1rem 4rem 4rem;
+    height: 1.5rem;
+  }
+
+  .azure_strip p{
+    display: none;
+  }
 }
